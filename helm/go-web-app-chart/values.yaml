@@ -1,0 +1,14 @@
+replicaCount: 1
+image:
+  repository: dineshkumarp23/go-web-app
+  pullPolicy: IfNotPresent
+  tag: "v1"
+ingress:
+  enabled: false
+  className: ""
+  anotations: {}
+  hosts:
+    - host: chart-example.local
+      paths:
+        - path: /
+          pathType: Implementationspecific
